@@ -36,6 +36,7 @@ jobs:
           echo "[connections]" > config.toml
           echo "[connections.dev]" >> config.toml
           echo "account = \"$SNOWFLAKE_CONNECTIONS_DEV_ACCOUNT\"" >> config.toml
+          cat config.toml
 
       - name: Deploy demo objects
         env:
